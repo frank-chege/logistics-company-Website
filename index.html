@@ -55,6 +55,8 @@
       ESTABLISHING & DELIVERING RESILIENT & SUSTAINABLE FOOD SUPPLY CHAINS
     </h1>
   </div>
+  <!--div to add space to prevent being coverd by the absolute landing image-->
+  <div class="space_div"></div>
   <!--page content-->
   <div class="container_info">
     <h1>
@@ -173,30 +175,37 @@
   <!--footer-->
   <footer>
     <section>
-      <a href="">About</a> <br>
-      <a href="">Programmes</a> <br>
-      <a href="">Tools</a> <br>
-      <a href="">News</a> <br>
-      <a href="">Contact</a> <br>
+      <a href="">About</a> <br> <hr>
+      <a href="">Programmes</a> <br> <hr>
+      <a href="">Tools</a> <br> <hr>
+      <a href="">News</a> <br> <hr>
+      <a href="">Contact</a> <hr>
     </section>
       
     <section>
       <div class="footer_sect">
-        <img src="./static/images/x.jpeg" alt="">
-        <img src="./static/images/in.jpeg" alt="">
+        <a href="">
+          <img src="./static/images/x.jpeg" alt="">
+        </a>
+        <a href="">
+          <img src="./static/images/in.jpeg" alt="">
+        </a>
       </div>
       <a href="">your_company_emai@gmail.com</a>
     </section>
     
     <section>
-      <img src="./static/images/log.jpeg" alt="">
+      <div class="footer_sect">
+        <img id="footer_logo" src="./static/images/log.jpeg" alt="">
+      </div>
+      company mission or motto here
     </section>
 
       <section id="credits">
+        &copy; 2024 Company name. All rights reserved.
+      |
         Made by Frank.
         <a href="mailto:francischege602@gmail.com">Contact developer</a>
-      <br>
-        &copy; 2024 Hospital X. All rights reserved.
       </section>
   </footer>
     <script src="{{url_for('static', filename='script.js')}}">

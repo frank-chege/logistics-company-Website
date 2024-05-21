@@ -59,24 +59,9 @@ section .button a img{
 #phone_logo {
     width: 3.5rem;
     height: 3.5rem;
-    position: relative;
-    z-index: 3;
     padding: 0.5rem;
-    margin-left: 1.8vw;margin-top: 0.2rem;
-}
-/*div above the navigation bar*/
-.phone p{
-    padding-top: 1rem;
-    font-size: 1rem;
-    font-family: sans-serif;
-    margin-left: 0.3rem;
-}
-/*sign up link*/
-.phone a{
-    padding-top: 0.5rem;
-    padding-left: 0.1rem;
-    font-size: 1rem;
-    font-family: sans-serif;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
 }
 /*side menu*/
  .cont{
@@ -132,7 +117,7 @@ section .button a img{
 /*container of the slideshow images on home page*/
 .landing_image {
     width: 100vw;
-    position: relative;
+    position: absolute;
     margin: 0%;
     z-index: 2;
   }
@@ -149,12 +134,20 @@ section .button a img{
     text-align: center;
     z-index: 3;
 }
+/* Add keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 /*intro message on the landing page*/
-.text h1{
+.text h1 {
     margin-top: 15rem;
     font-size: 2.5rem;
     color: #ffffff;
+    /* Animation Name | Duration | Ease Function | Delay | Iteration Count | Fill Mode */
+    animation: fadeIn 2s ease-in-out 0s 1 forwards;
 }
+
 /*landing page booking button*/
 .text a button{
     font-size: 1.4rem;
@@ -170,6 +163,10 @@ section .button a img{
 /*button hovering*/
 .text a button:hover{
     background-color: #38a3e0;
+}
+/*div to add space*/
+.space_div{
+    margin-top: 90vh;
 }
 /*information containers . have large width*/
 .container_info {
@@ -402,40 +399,59 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    background-color: #363636;
+    background-color: #444444;
     margin-top: auto;
     font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 5vh;
 }
 /*footer section*/
 footer section {
     text-align: center;
-    padding: 1.5rem;
+    padding: 0.7rem;
 }
 /*foter links*/
-footer section a{
-    text-align: center;
+footer section  a{
     text-decoration-line: none;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+footer section a:hover{
+    color: #d8d538;
+}
 /*footer class in footer*/
 .footer_sect{
-    display: flex;
+    align-self: center;
+    padding: 0.5rem;
 }
 #credits{
     text-align: center;
     flex-basis: 90%;
+    font-size: 0.8rem;
+    background-color: #575757;
+    width: 100vw;
 }
 /*footer images*/
 .footer_sect img{
-    height: 2rem;
-    width: 2rem;
+    height: 2.2rem;
+    width: 2.2rem;
     margin-bottom: 0.2rem;
 }
-/*footer class links*/
-.footer_sect a{
-    margin-top: 0.3rem;
-    margin-left: 0.2rem;
+/*
+.footer_sect img:hover{
+    background-color: #333333;
+    opacity: 1;
+}*/
+/*invisible line to act as padding*/
+footer section hr{
+    visibility: hidden;
+    font-size: 4px;
+}
+/*footer section image(logo)*/
+#footer_logo{
+    width: 7rem;
+    height: 7rem;
 }
 /*forms*/
 section form{
