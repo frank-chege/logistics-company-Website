@@ -21,7 +21,7 @@ function show_menu(){
 function scroll_navbar(){
     //get the classes of the large and small width navigation bars
     let large_nav = document.getElementsByClassName('large')[0];
-    let small_nav = document.getElementsByClassName('phone')[0];
+    let small_nav = document.getElementsByClassName('index_nav')[0];
     if (window.scrollY > 0){
         //change the background color
         large_nav.style.backgroundColor = '#333333';

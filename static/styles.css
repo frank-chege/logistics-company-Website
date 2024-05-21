@@ -42,8 +42,8 @@ section .button a img{
 .large{
     display: none;
 }
-/*phone div*/
-.phone{
+/* home page navigation bar*/
+.index_nav{
     padding-bottom: 0.5rem;
     width: 100vw;
     height: 5rem;
@@ -54,6 +54,17 @@ section .button a img{
     position: absolute;
     z-index: 4;
     top: 0%;
+}
+/*nav bar on other pages*/
+.normal_nav{
+    padding-bottom: 0.5rem;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    background-color: #333333;
+    justify-content: left;
+    margin-left: auto;
+    position: sticky;
 }
 /*logo shown on top of page*/
 #phone_logo {
@@ -196,9 +207,98 @@ section .button a img{
     width: 70vw;
     height: 90vh;
 }
+/*set container info on the about page to white background*/
+#container_info_about{
+    width: 100vw;
+    background-color: #e0e0e0;
+    margin: 0%;
+    padding: 1rem;
+}
+/*set the respective background images*/
+/*programmes page*/
+#programmes{
+    background-image: url('./images/HeroDark.jpg');
+}
+.page_intro{
+    height: 50vh;
+    color: white;
+    text-align: center;
+}
+.page_intro h1{
+    margin-top: 20vh;
+    font-size: 3rem;
+    /*fade in animation*/
+    animation: fadeIn 2s ease-in-out 0s 1 forwards;
+}
+/*images with links container*/
+.img_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*img with links for accessibility*/
+.img_with_links{
+    height: 30vh;
+    width: 50vw;
+    font-size: 0.9rem;
+    color: white;
+    margin: 2rem;
+    text-align: center;
+}
+.img_with_links a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/*about page*/
+#person1{
+    background-image: url('./images/person1.jpg');
+}
+#person2{
+    background-image: url('./images/person2.jpg');
+}
+/*about contaner*/
+.about_cont{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    overflow: visible;
+    margin-bottom: 35vh;
+}
+/*about container p*/
+.about_cont p{
+    position: relative;
+    background-color: white;
+    text-align: left;
+    width: 70vw;
+    padding: 3rem;
+    color: #636363;
+    font-size: 1rem;
+    margin-top: 45vh;
+    height: fit-content;
+}
+.about_cont p span{
+    font-size: 2rem;
+    color: rgb(39, 38, 38);
+    font-weight: 550;
+}
 /*h3*/
 h3{
     text-align: center;
+}
+/*programmes container*/
+.programmes_cont{
+    display: block;
+    width: 100vw;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* content container*/
 .container {
