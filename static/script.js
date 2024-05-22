@@ -130,3 +130,29 @@ function calculateSlidesToShow() {
     return 3; // Show 3 slides on large devices
   }
 }
+
+
+//ai code
+document.querySelectorAll('.tools_list .toggle').forEach(function(toggle) {
+  toggle.addEventListener('click', function() {
+    var content = this.nextElementSibling;
+    // Check if the current dropdown is open
+    if (content.style.display === 'block') {
+      content.style.display = 'none'; // Hide the dropdown
+      this.textContent = '+'; // Change the sign to +
+      this.classList.remove('active'); // Remove the active class
+    } else {
+      // Close all other open dropdowns
+      document.querySelectorAll('.tools_list .dropdown_content').forEach(function(otherContent) {
+        otherContent.style.display = 'none';
+      });
+      document.querySelectorAll('.tools_list .toggle').forEach(function(otherToggle) {
+        otherToggle.textContent = '+';
+        otherToggle.classList.remove('active');
+      });
+      content.style.display = 'block'; // Show the current dropdown
+      this.textContent = '-'; // Change the sign to -
+      this.classList.add('active'); // Add the active class
+    }
+  });
+});

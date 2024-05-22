@@ -43,34 +43,74 @@
               <a href="">News</a>
               <a href="">Contact</a>
             </div>
-<body style="background-color: white;">
-    <div id="container_info_about" class="container_info">
-        <h1>About us</h1>
+<body>
+    <!--image container, img is added as a background in the css-->
+    <div id="programmes" class="page_intro">
+        <h1>OUR ACTIVITIES, TOOLS &RESOURCES</h1>
     </div>
-    <div id="person1" class="about_cont">
-        <p>
-            <span class="about_title">Director</span> <br> <br>
-            Paul has over 35 years of experience in the food and farming sector, 
-            with 14 years’ experience as an agri-food consultant establishing long
-             term collaborative supply chains for both large and small food and farming 
-             businesses. He has a wide knowledge of the farming, processing and manufacturing 
-             sector and is skilled at delivering innovative solutions, managing change and making 
-             things happen. Paul is passionate about British Farming, the countryside and the wildlife 
-             supported by it.
-        </p>
+
+     <!--page content-->
+  <div style="width: 80vw;" class="container_info">
+    <h1>
+        Making it happen
+    </h1>
+    <p>
+        Future Food Solutions was founded 8 years ago to help
+         improve the resilience of food and farming supply chains.
+          To achieve this, they have developed a number of key programmes
+    </p>
+  </div>
+    <!--list-->
+    <div>
+        <ul class="tools_list">
+            <li>
+              <span class="toggle">+</span>travel to learn
+              <div class="dropdown_content">Additional information for Item 1</div>
+            </li>
+            <li>
+              <span class="toggle">+</span>farm trials
+              <div class="dropdown_content">Additional information for Item 2</div>
+            </li>
+            <!-- Add more list items as needed -->
+          </ul>
     </div>
-     <div id="person2" class="about_cont">
-        <p>
-            <span class="about_title">Director</span> <br> <br>
-            Paul has over 35 years of experience in the food and farming sector, 
-            with 14 years’ experience as an agri-food consultant establishing long
-             term collaborative supply chains for both large and small food and farming 
-             businesses. He has a wide knowledge of the farming, processing and manufacturing 
-             sector and is skilled at delivering innovative solutions, managing change and making 
-             things happen. Paul is passionate about British Farming, the countryside and the wildlife 
-             supported by it.
-        </p>
-    </div>
+
+  
+  <!--
+    /*tools page*/
+/*list*/
+.tools_list ul{
+    list-style: none;
+    width: 80vw;
+    padding-bottom: 1rem;
+    color: #bcc539;
+}
+.tools_list ul li::before {
+    cursor: pointer;
+    content: '+'; /* Plus sign as the content */
+    color: white; /* Plus sign color */
+    font-size: 1.2rem; /* Size of the plus sign */
+    line-height: 1.4rem; /* Align the plus sign vertically */
+    width: 1.4rem; /* Width of the square */
+    height: 1.4rem; /* Height of the square */
+    background-color: rgb(59, 59, 59); /* Square color */
+    display: inline-block; /* Needed to apply dimensions */
+    text-align: center; /* Center the plus sign in the square */
+    margin-right: 1.1rem; /* Space between bullet and text */
+    vertical-align: middle; /* Align bullet vertically with text */
+  }
+  
+
+/*tools list*/
+.tools_list li{
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    color: #858585;
+}
+  -->
+
+
+
   <!--footer-->
   <footer>
     <section>

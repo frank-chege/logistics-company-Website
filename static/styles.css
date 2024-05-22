@@ -363,6 +363,36 @@ h3{
     height: 30vh;
     margin-bottom: 2rem;
 }
+/*tools page*/
+/*list*/
+.tools_list ul{
+    list-style: none;
+    width: 80vw;
+    padding-bottom: 1rem;
+    color: #bcc539;
+}
+.tools_list ul li::before {
+    cursor: pointer;
+    content: '+'; /* Plus sign as the content */
+    color: white; /* Plus sign color */
+    font-size: 1.2rem; /* Size of the plus sign */
+    line-height: 1.4rem; /* Align the plus sign vertically */
+    width: 1.4rem; /* Width of the square */
+    height: 1.4rem; /* Height of the square */
+    background-color: rgb(59, 59, 59); /* Square color */
+    display: inline-block; /* Needed to apply dimensions */
+    text-align: center; /* Center the plus sign in the square */
+    margin-right: 1.1rem; /* Space between bullet and text */
+    vertical-align: middle; /* Align bullet vertically with text */
+  }
+  
+
+/*tools list*/
+.tools_list li{
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    color: #858585;
+}
 /* content container*/
 .container {
     display: block;
