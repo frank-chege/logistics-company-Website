@@ -1,242 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <title>logistics</title>
-        <link rel="icon" type="image/jpeg" href="./static/images/log.jpeg">
-        <link rel="stylesheet" type="text/css" href="./static/styles.css">
-    </head>
-        <!-- Navigation Bar -->
-        <div class="normal_nav">
-          <a href="index.html">
-          <img src="./static/images/log.jpeg" alt="logo" id="phone_logo">
-          </a>
-        
-          <a>
-            <img onclick="show_menu()" src="./static/images/menu.jpeg" alt="Menu tab" id="menu_img">
-          </a>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>logistics</title>
+    <link rel="icon" type="image/jpeg" href="./static/images/log.jpeg" />
+    <link rel="stylesheet" type="text/css" href="./static/styles.css" />
+  </head>
+  <!-- Navigation Bar -->
+  <div class="index_nav">
+    <a href="index.html">
+      <img src="./static/images/log.jpeg" alt="logo" id="phone_logo" />
+    </a>
 
-        </div> 
-        <!--side menu-->
-        <div class="cont">
-            <h1 onclick="close_menu()" id="close_menu">&times;</h1>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="programmes.html">Programmes</a>
-            <a href="tools.html">Tools</a>
-            <a href="">News</a>
-            <a href="">Contact</a>
-        </div>
-        
-            <!--navbar for large devices-->
-            <div class="large">
-              <div class="logo">
-                <a href="index.html">
-                    <img src="./static/images/log.jpeg" alt="logo" id="phone_logo">
-                </a>
-             </div>
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="programmes.html">Programmes</a>
-              <a href="">Tools</a>
-              <a href="">News</a>
-              <a href="">Contact</a>
-            </div>
-<body>
-    <!--image container, img is added as a background in the css-->
-    <div id="programmes" class="page_intro">
-        <h1>OUR PROGRAMMES</h1>
-    </div>
-
-     <!--page content-->
-  <div style="width: 80vw;" class="container_info">
-    <h1>
-        Future Food Solutions Programmes
-    </h1>
-    <p>
-        Future Food Solutions was founded 8 years ago to help
-         improve the resilience of food and farming supply chains.
-          To achieve this, they have developed a number of key programmes
-    </p>
+    <a>
+      <img
+        onclick="show_menu()"
+        src="./static/images/menu.jpeg"
+        alt="Menu tab"
+        id="menu_img"
+      />
+    </a>
+  </div>
+  <!--side menu-->
+  <div class="cont">
+    <h1 onclick="close_menu()" id="close_menu">&times;</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
   </div>
 
-<!--container holding images with links-->
-<div class="img_cont">
-    <!--image with links-->
-    <div class="img_with_links" style="background-image: url('./static/images/HeroDark.jpg');">
-        <!--add a space to lower the link-->
-        <div style="height: 23vh;"></div>
-        <a href="#id1">Learn more</a>
-    </div>
-
-    <div class="img_with_links" style="background-image: url('./static/images/HeroDark.jpg');">
-        <!--add a space to lower the link-->
-        <div style="height: 23vh;"></div>
-        <a href="#id2">Learn more</a>
-    </div>
-
-    <div class="img_with_links" style="background-image: url('./static/images/HeroDark.jpg');">
-        <!--add a space to lower the link-->
-        <div style="height: 23vh;"></div>
-        <a href="#id3">Learn more</a>
-    </div>
-
-    <div class="img_with_links" style="background-image: url('./static/images/HeroDark.jpg');">
-        <!--add a space to lower the link-->
-        <div style="height: 23vh;"></div>
-        <a href="#id4">Learn more</a>
-    </div>
-</div>
-<!--divs where the images with links lead to-->
- <!--container-->
- <div id="id1" class="programmes">
-    <img src="./static/images/carbon.png" alt="carbon_bank">
-    <p>
-        A collaborative supply chain approach to deliver more resilient supply
-         chains for agricultural commodities. Working with brands and more than
-          300 broad acre farmers since 2014.
-    </p>
-    <ul>
-      <li>Help the UK food & drink industry achieve net-zero carbon</li>
-      <li>Secure a new income stream</li>
-      <li>Improve the biodiversity of your farmland </li>
-      <li>Positively influence the perception of UK farming</li>
-    </ul>
-    <!--use the container class to style the button-->
-    <div style="background-color: inherit;" class="container">
-      <a href="">
-        <button style="height: 3.2rem; width: 12rem;">
-          Visit website
-        </button>
+  <!--navbar for large devices-->
+  <div class="large">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./static/images/log.jpeg" alt="logo" id="phone_logo" />
       </a>
     </div>
-    <hr>
-</div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <body>
+    <!--image container, img is added as a background in the css-->
+    <div id="programmes" class="page_intro">
+      <h1>OUR PROGRAMMES</h1>
+    </div>
 
-<div id="id2" class="programmes">
-  <img src="./static/images/carbon.png" alt="carbon_bank">
-  <p>
-      A collaborative supply chain approach to deliver more resilient supply
-       chains for agricultural commodities. Working with brands and more than
-        300 broad acre farmers since 2014.
-  </p>
-  <ul>
-    <li>Help the UK food & drink industry achieve net-zero carbon</li>
-    <li>Secure a new income stream</li>
-    <li>Improve the biodiversity of your farmland </li>
-    <li>Positively influence the perception of UK farming</li>
-  </ul>
-  <!--use the container class to style the button-->
-  <div style="background-color: inherit;" class="container">
-    <a href="">
-      <button style="height: 3.2rem; width: 12rem;">
-        Visit website
-      </button>
-    </a>
-  </div>
-  <hr>
-</div>
+    <!--page content-->
+    <div style="width: 80vw" class="container_info">
+      <h1>Future Food Solutions Programmes</h1>
+      <p>
+        Future Food Solutions was founded 8 years ago to help improve the
+        resilience of food and farming supply chains. To achieve this, they have
+        developed a number of key programmes
+      </p>
+    </div>
 
-<div id="id3" class="programmes">
-  <img src="./static/images/carbon.png" alt="carbon_bank">
-  <p>
-      A collaborative supply chain approach to deliver more resilient supply
-       chains for agricultural commodities. Working with brands and more than
-        300 broad acre farmers since 2014.
-  </p>
-  <ul>
-    <li>Help the UK food & drink industry achieve net-zero carbon</li>
-    <li>Secure a new income stream</li>
-    <li>Improve the biodiversity of your farmland </li>
-    <li>Positively influence the perception of UK farming</li>
-  </ul>
-  <!--use the container class to style the button-->
-  <div style="background-color: inherit;" class="container">
-    <a href="">
-      <button style="height: 3.2rem; width: 12rem;">
-        Visit website
-      </button>
-    </a>
-  </div>
-  <hr>
-</div>
+    <!--container holding images with links-->
+    <div class="img_cont">
+      <!--image with links-->
+      <div
+        class="img_with_links"
+        style="background-image: url('./static/images/HeroDark.jpg')"
+      >
+        <!--add a space to lower the link-->
+        <div style="height: 10vh"></div>
+        <h1>Some heading</h1>
+        <a href="#id1">Learn more</a>
+      </div>
 
-<div id="id4" class="programmes">
-  <img src="./static/images/carbon.png" alt="carbon_bank">
-  <p>
-      A collaborative supply chain approach to deliver more resilient supply
-       chains for agricultural commodities. Working with brands and more than
+      <div
+        class="img_with_links"
+        style="background-image: url('./static/images/HeroDark.jpg')"
+      >
+        <!--add a space to lower the link-->
+        <div style="height: 10vh"></div>
+        <h1>Some heading</h1>
+        <a href="#id2">Learn more</a>
+      </div>
+
+      <div
+        class="img_with_links"
+        style="background-image: url('./static/images/HeroDark.jpg')"
+      >
+        <!--add a space to lower the link-->
+        <div style="height: 10vh"></div>
+        <h1>Some heading</h1>
+        <a href="#id3">Learn more</a>
+      </div>
+
+      <div
+        class="img_with_links"
+        style="background-image: url('./static/images/HeroDark.jpg')"
+      >
+        <!--add a space to lower the link-->
+        <div style="height: 10vh"></div>
+        <h1>Some heading</h1>
+        <a href="#id4">Learn more</a>
+      </div>
+    </div>
+    <!--divs where the images with links lead to-->
+    <!--container-->
+    <div id="id1" class="programmes">
+      <img src="./static/images/carbon.png" alt="carbon_bank" />
+      <p>
+        A collaborative supply chain approach to deliver more resilient supply
+        chains for agricultural commodities. Working with brands and more than
         300 broad acre farmers since 2014.
-  </p>
-  <ul>
-    <li>Help the UK food & drink industry achieve net-zero carbon</li>
-    <li>Secure a new income stream</li>
-    <li>Improve the biodiversity of your farmland </li>
-    <li>Positively influence the perception of UK farming</li>
-  </ul>
-  <!--use the container class to style the button-->
-  <div style="background-color: inherit;" class="container">
-    <a href="">
-      <button style="height: 3.2rem; width: 12rem;">
-        Visit website
-      </button>
-    </a>
-  </div>
-  <hr style="margin-bottom: 3rem;">
-  <!--programmes info div-->
-  <div class="programmes_info">
-    <h1>Pop Up Rainforest</h1>
-    <p>
-      The use of specifically designed cover crop mixes to build organic 
-      matter and deliver carbon sequestration in soil within arable farming rotations. 
-      
-      This innovative approach can help farmers become the solution to climate change rather than the problem.
-       We are lowering ingredient Carbon levels for food companies who have the ambition to become Zero Carbon producers
-        in the future.
-    </p>
-    <img src="./static/images/sunflower.jpg" alt="">
-  </div>
-</div>
-  <!--footer-->
-  <footer>
-    <section>
-      <a href="">About</a> <br> <hr>
-      <a href="">Programmes</a> <br> <hr>
-      <a href="">Tools</a> <br> <hr>
-      <a href="">News</a> <br> <hr>
-      <a href="">Contact</a> <hr>
-    </section>
-      
-    <section>
-      <div class="footer_sect">
+      </p>
+      <ul>
+        <li>Help the UK food & drink industry achieve net-zero carbon</li>
+        <li>Secure a new income stream</li>
+        <li>Improve the biodiversity of your farmland</li>
+        <li>Positively influence the perception of UK farming</li>
+      </ul>
+      <!--use the container class to style the button-->
+      <div style="background-color: inherit" class="container">
         <a href="">
-          <img src="./static/images/x.jpeg" alt="">
-        </a>
-        <a href="">
-          <img src="./static/images/in.jpeg" alt="">
+          <button style="height: 3.2rem; width: 12rem">Visit website</button>
         </a>
       </div>
-      <a href="">your_company_emai@gmail.com</a>
-    </section>
-    
-    <section>
-      <div class="footer_sect">
-        <img id="footer_logo" src="./static/images/log.jpeg" alt="">
+      <hr />
+    </div>
+
+    <div id="id2" class="programmes">
+      <img src="./static/images/carbon.png" alt="carbon_bank" />
+      <p>
+        A collaborative supply chain approach to deliver more resilient supply
+        chains for agricultural commodities. Working with brands and more than
+        300 broad acre farmers since 2014.
+      </p>
+      <ul>
+        <li>Help the UK food & drink industry achieve net-zero carbon</li>
+        <li>Secure a new income stream</li>
+        <li>Improve the biodiversity of your farmland</li>
+        <li>Positively influence the perception of UK farming</li>
+      </ul>
+      <!--use the container class to style the button-->
+      <div style="background-color: inherit" class="container">
+        <a href="">
+          <button style="height: 3.2rem; width: 12rem">Visit website</button>
+        </a>
       </div>
-      company mission or motto here
-    </section>
+      <hr />
+    </div>
+
+    <div id="id3" class="programmes">
+      <img src="./static/images/carbon.png" alt="carbon_bank" />
+      <p>
+        A collaborative supply chain approach to deliver more resilient supply
+        chains for agricultural commodities. Working with brands and more than
+        300 broad acre farmers since 2014.
+      </p>
+      <ul>
+        <li>Help the UK food & drink industry achieve net-zero carbon</li>
+        <li>Secure a new income stream</li>
+        <li>Improve the biodiversity of your farmland</li>
+        <li>Positively influence the perception of UK farming</li>
+      </ul>
+      <!--use the container class to style the button-->
+      <div style="background-color: inherit" class="container">
+        <a href="">
+          <button style="height: 3.2rem; width: 12rem">Visit website</button>
+        </a>
+      </div>
+      <hr />
+    </div>
+
+    <div id="id4" class="programmes">
+      <img src="./static/images/carbon.png" alt="carbon_bank" />
+      <p>
+        A collaborative supply chain approach to deliver more resilient supply
+        chains for agricultural commodities. Working with brands and more than
+        300 broad acre farmers since 2014.
+      </p>
+      <ul>
+        <li>Help the UK food & drink industry achieve net-zero carbon</li>
+        <li>Secure a new income stream</li>
+        <li>Improve the biodiversity of your farmland</li>
+        <li>Positively influence the perception of UK farming</li>
+      </ul>
+      <!--use the container class to style the button-->
+      <div style="background-color: inherit" class="container">
+        <a href="">
+          <button style="height: 3.2rem; width: 12rem">Visit website</button>
+        </a>
+      </div>
+      <hr style="margin-bottom: 3rem" />
+      <!--programmes info div-->
+      <div class="programmes_info">
+        <h1>Pop Up Rainforest</h1>
+        <p>
+          The use of specifically designed cover crop mixes to build organic
+          matter and deliver carbon sequestration in soil within arable farming
+          rotations. This innovative approach can help farmers become the
+          solution to climate change rather than the problem. We are lowering
+          ingredient Carbon levels for food companies who have the ambition to
+          become Zero Carbon producers in the future.
+        </p>
+        <img src="./static/images/sunflower.jpg" alt="" />
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <section>
+        <a href="index.html">Home</a> <br />
+        <hr />
+        <a href="about.html">About</a> <br />
+        <hr />
+        <a href="programmes.html">Programmes</a> <br />
+        <hr />
+        <a href="tools.html">Tools</a> <br />
+        <hr />
+        <hr />
+        <a href="contact.html">Contact</a>
+        <hr />
+      </section>
+
+      <section>
+        <div class="footer_sect">
+          <a href="">
+            <img src="./static/images/x.jpeg" alt="" />
+          </a>
+          <a href="">
+            <img src="./static/images/in.jpeg" alt="" />
+          </a>
+        </div>
+        <a href="">your_company_emai@gmail.com</a>
+      </section>
+
+      <section>
+        <div class="footer_sect">
+          <img id="footer_logo" src="./static/images/log.jpeg" alt="" />
+        </div>
+        company mission or motto here
+      </section>
 
       <section id="credits">
-        &copy; 2024 Company name. All rights reserved.
-      |
-        Made by Frank.
+        &copy; 2024 Company name. All rights reserved. | Made by Frank.
         <a href="mailto:francischege602@gmail.com">Contact developer</a>
       </section>
-  </footer>
-  <!--scripts-->
+    </footer>
+    <!--scripts-->
     <script src="./static/script.js">
-        //
+      //
     </script>
-</body>
+  </body>
 </html>

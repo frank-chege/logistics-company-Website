@@ -45,36 +45,27 @@
     <a href="tools.html">Tools</a>
     <a href="contact.html">Contact</a>
   </div>
-  <body style="background-color: white">
-    <div id="container_info_about" class="container_info">
-      <h1>About us</h1>
+  <body>
+    <!--image container, img is added as a background in the css-->
+    <div id="programmes" class="page_intro">
+      <h1>Contact us</h1>
     </div>
-    <div id="person1" class="about_cont">
-      <p>
-        <span class="about_title">Director</span> <br />
-        <br />
-        Paul has over 35 years of experience in the food and farming sector,
-        with 14 years’ experience as an agri-food consultant establishing long
-        term collaborative supply chains for both large and small food and
-        farming businesses. He has a wide knowledge of the farming, processing
-        and manufacturing sector and is skilled at delivering innovative
-        solutions, managing change and making things happen. Paul is passionate
-        about British Farming, the countryside and the wildlife supported by it.
-      </p>
-    </div>
-    <div id="person2" class="about_cont">
-      <p>
-        <span class="about_title">Director</span> <br />
-        <br />
-        Paul has over 35 years of experience in the food and farming sector,
-        with 14 years’ experience as an agri-food consultant establishing long
-        term collaborative supply chains for both large and small food and
-        farming businesses. He has a wide knowledge of the farming, processing
-        and manufacturing sector and is skilled at delivering innovative
-        solutions, managing change and making things happen. Paul is passionate
-        about British Farming, the countryside and the wildlife supported by it.
-      </p>
-    </div>
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="contact-button">Send Message</button>
+      </form>
+    </section>
+
     <!--footer-->
     <footer>
       <section>
