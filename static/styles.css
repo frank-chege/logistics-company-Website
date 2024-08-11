@@ -398,13 +398,21 @@ li {
   margin-left: 12vw;
 }
 @media (max-width: 600px) {
+  /*side menu links*/
   .cont a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    line-height: 3rem;
+  }
+  /*times sign acting as close menu button*/
+  #close_menu {
+    font-size: 4.2rem;
+    margin-top: 7%;
   }
   .text h1 {
     font-size: 1.8rem;
-    margin-top: 15rem;
-    line-height: 2rem;
+    margin-top: 14rem;
+    line-height: 3rem;
   }
   .container_info p {
     font-size: 1rem;
@@ -459,17 +467,6 @@ li {
     z-index: 2;
     margin-top: 15vh;
     margin-left: 18vw;
-  }
-  /*side menu links*/
-  .cont a {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    line-height: 3rem;
-  }
-  /*times sign acting as close menu button*/
-  #close_menu {
-    font-size: 4.2rem;
-    margin-top: 7%;
   }
 }
 /*set the respective background images*/
