@@ -26,15 +26,15 @@ function scroll_navbar() {
     //change the background color
     large_nav.style.backgroundColor = "#333333";
     small_nav.style.backgroundColor = "#333333";
-    //change the positioning of nav bar to make it fixed while scrolling
-    large_nav.style.position = "sticky";
-    small_nav.style.position = "sticky";
+    // //change the positioning of nav bar to make it fixed while scrolling
+    // large_nav.style.position = "sticky";
+    // small_nav.style.position = "sticky";
   } else {
     // Reset the background color when scrolling back up
     large_nav.style.backgroundColor = "transparent";
     small_nav.style.backgroundColor = "transparent";
-    large_nav.style.position = "absolute";
-    small_nav.style.position = "absolute";
+    // large_nav.style.position = "absolute";
+    // small_nav.style.position = "absolute";
   }
 }
 //add the event listener
